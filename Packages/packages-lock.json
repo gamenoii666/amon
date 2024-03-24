@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "com.lootlocker.lootlockersdk": {
-      "version": "file:C:/Users/amonthep/Desktop/unity-sdk-main",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.meta.xr.mrutilitykit": {
       "version": "60.0.0",
       "depth": 1,

@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.lootlocker.lootlockersdk": "file:C:/Users/amonthep/Desktop/unity-sdk-main",
     "com.meta.xr.sdk.all": "60.0.0",
     "com.meta.xr.sdk.core": "62.0.0",
     "com.meta.xr.sdk.interaction.ovr.samples": "62.0.0",
