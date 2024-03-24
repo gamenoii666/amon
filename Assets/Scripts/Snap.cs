@@ -11,6 +11,14 @@ public class Snap : MonoBehaviour
     public bool isSnap = false;
     public bool isPartCorrect = false;
     // Start is called before the first frame update
+
+    private void OnEnable()
+    {
+        if (PlayerPrefs.HasKey("Part"))
+        {
+            _NamePartSnap = PlayerPrefs.GetString("Part");
+        }
+    }
     void Start()
     {
 
@@ -54,6 +62,16 @@ public class Snap : MonoBehaviour
             isPartCorrect = false;
 
         }
+    }
+    private void OnDestroy()
+    {
+        savePrefs();
+    }
+
+    void savePrefs()
+    {
+        PlayerPrefs.SetString("Part", _NamePartSnap);
+        PlayerPrefs.Save();
     }
 
 }

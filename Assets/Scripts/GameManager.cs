@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject UIGameObject;
     private Snap[] SnapsScripts;
+    public UI uigame;
     int numberSnapTotal;
     int numberSnapCurrent;
     bool isAllSnap = false;
