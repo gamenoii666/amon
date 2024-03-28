@@ -11,6 +11,11 @@ public class MenuController : MonoBehaviour
         SceneManager.LoadScene("Inventory");
         
     }
+    public void HowToPlay()
+    {
+        Debug.Log("How to Play");
+        SceneManager.LoadScene("MainMenu");
+    }
 
     public void QuitGame()
     {

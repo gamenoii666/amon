@@ -24,6 +24,7 @@ public class Snap : MonoBehaviour
     {
 
     }
+   
 
     private void OnTriggerStay(Collider other)
     {
