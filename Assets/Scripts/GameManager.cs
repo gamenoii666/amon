@@ -4,28 +4,53 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+
     public GameObject UIGameObject;
     private Snap[] SnapsScripts;
     public LeaderboardManager Leaderboard;
     int numberSnapTotal;
     int numberSnapCurrent;
-    bool isAllSnap = false;
+    float currentTime;
+    public bool timerStarted = false;
+    public AudioSource audioSource;
+    public AudioClip clip;
+    
     // Start is called before the first frame update
     void Start()
     {
         SnapsScripts = GameObject.FindObjectsOfType<Snap>();
         numberSnapTotal = SnapsScripts.Length;
+        UIGameObject.SetActive(false);
+        timerStarted = true;
     }
+    
+
 
     // Update is called once per frame
     void Update()
     {
-        
+
         snapCheck();
         if (numberSnapCurrent == numberSnapTotal)
         {
+            timerStarted = true;
             endGame();
+            
         }
+        if (timerStarted)
+        {
+            currentTime -= Time.deltaTime;
+            if (currentTime <= 0)
+            {
+                timerStarted = false;
+                currentTime = 0;
+            }
+        }
+
+        
+
+
+
 
     }
 
@@ -37,15 +62,22 @@ public class GameManager : MonoBehaviour
             if (snap.isSnap)
             {
                 numberSnapCurrent++;
-                Debug.Log(numberSnapCurrent);
+
             }
-            Debug.Log(snap.isSnap);
+
         }
         Leaderboard.UpdateScore(numberSnapCurrent);
     }
     void endGame()
     {
+        if (audioSource != false)
+        {
+            Debug.Log("Playing sound");
+            audioSource.PlayOneShot(clip);
+          
+
+        }
         UIGameObject.SetActive(true);
-        
+        timerStarted = false;
     }
 }

@@ -11,6 +11,8 @@ public class Snap : MonoBehaviour
 
     public bool isSnap = false;
     public bool isPartCorrect = false;
+    float countTime = 0f;
+    public bool iSTime;
 
     // Start is called before the first frame update
     public int Score = 0;
@@ -22,9 +24,9 @@ public class Snap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
-   
+
 
     private void OnTriggerStay(Collider other)
     {
@@ -32,7 +34,7 @@ public class Snap : MonoBehaviour
         {
 
             other.gameObject.transform.position = transform.position;
-           other.gameObject.transform.rotation = transform.rotation;
+            other.gameObject.transform.rotation = transform.rotation;
 
             if (other.gameObject.name == _NamePartSnap)
             {
@@ -43,10 +45,10 @@ public class Snap : MonoBehaviour
             }
             if (!isSnap)
             {
-                
+               
                 isSnap = true;
-              //gameManager.snapCheck();
-
+                //gameManager.snapCheck();
+                
             }
 
         }
@@ -55,12 +57,13 @@ public class Snap : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        
 
         if (other.gameObject.CompareTag("Part"))
         {
             isSnap = false;
             isPartCorrect = false;
-
+            
         }
     }
 

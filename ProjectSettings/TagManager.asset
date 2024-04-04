@@ -13,8 +13,7 @@ TagManager:
   - snappoint
   - parentblock
   - Part
-  - Snap
-  - snap_audio
+  - Audio
   layers:
   - Default
   - TransparentFX

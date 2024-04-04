@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class LeaderboardManager : MonoBehaviour
 {
+   
+
     public Text scoreText;
     public Text highScoreText;
 
@@ -10,24 +12,31 @@ public class LeaderboardManager : MonoBehaviour
     private int highScore = 0;
     private string highScoreKey = "HighScore";
 
+    
     void Start()
     {
         highScore = PlayerPrefs.GetInt(highScoreKey, 0);
         UpdateHighScoreUI();
+        
     }
     
     void Update()
     {
         // Example: Update score text UI
         scoreText.text = "Score: " + score.ToString();
+
+       
+
     }
+  
+
 
     // Method to update the score
     public void UpdateScore(int newScore)
     {
         score = newScore;
         UpdateScoreUI();
-        Debug.Log(score);
+        
         UpdateHighScoreUI(); // Check and update high score whenever score changes
     }
 

@@ -1,12 +1,21 @@
+using Meta.Voice.Audio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class sfx_script : MonoBehaviour
 {
-    public AudioClip AudioClip;
-     void OnTriggerStay(Collider Audio)
+    public AudioSource AudioPlayer;
+
+     
+     public void OnTriggerEnter(Collider collider)
     {
-        AudioSource.PlayClipAtPoint(AudioClip,transform.position);
+        if(collider .gameObject.tag == "Part")
+        {
+            AudioPlayer.Play();
+        }
+       
+        
     }
+  
 }

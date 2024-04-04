@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Meta.Voice.Audio;
 
 public class UI : MonoBehaviour
 {
     public GameManager gameManager;
     public Snap Snap;
+    public sfx_script sfx_Script;
     // Start is called before the first frame update
 
     public class LeaderboardUi : MonoBehaviour
@@ -25,6 +27,6 @@ public class UI : MonoBehaviour
             text.text = "Part: " + Snap.gameObject.name;
         }
     }
-
+   
 }
 
