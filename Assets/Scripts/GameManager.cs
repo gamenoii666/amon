@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     int numberSnapTotal;
     int numberSnapCurrent;
     float currentTime;
-    public bool timerStarted = false;
+    public bool timerStarted;
     public AudioSource audioSource;
     public AudioClip clip;
     
@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
         if (timerStarted)
         {
             currentTime -= Time.deltaTime;
-            if (currentTime <= 0)
+            if (currentTime >= 0)
             {
                 timerStarted = false;
                 currentTime = 0;

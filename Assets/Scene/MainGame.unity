@@ -1922,7 +1922,7 @@ RectTransform:
   m_GameObject: {fileID: 432767579}
   m_LocalRotation: {x: -0.000023957222, y: -0.0037104487, z: 0.0064564953, w: 0.9999723}
   m_LocalPosition: {x: 0, y: 0, z: -32}
-  m_LocalScale: {x: 1.3739427, y: 1.3739426, z: 1.3739423}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7557915529007468423}
@@ -1930,7 +1930,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 5, y: 124}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 400, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &432767581
 CanvasRenderer:
@@ -1962,11 +1962,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: f5cecbb1edc3b3f408096c7d4b6ef8a7, type: 3}
-    m_FontSize: 28
+    m_FontSize: 43
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 7
-    m_MaxSize: 40
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 67
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -4809,7 +4809,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Continuie
+  m_text: "\u0E15\u0E48\u0E2D\u0E44\u0E1B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d72557de83c1e549a894439fd3ffb84, type: 2}
   m_sharedMaterial: {fileID: 3646464594886495718, guid: 8d72557de83c1e549a894439fd3ffb84,
@@ -5863,7 +5863,7 @@ PrefabInstance:
     - target: {fileID: 5919106134362994299, guid: 5fca3702cdf1a214a94e69dcfa704e17,
         type: 3}
       propertyPath: m_Name
-      value: RESTART (1)
+      value: continue
       objectReference: {fileID: 0}
     - target: {fileID: 5919106134362994299, guid: 5fca3702cdf1a214a94e69dcfa704e17,
         type: 3}
@@ -7827,7 +7827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &578532977865983987
 Transform:
   m_ObjectHideFlags: 0
@@ -8138,7 +8138,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: QUITGAME
+  m_text: "\u0E2D\u0E2D\u0E01\u0E40\u0E01\u0E21"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d72557de83c1e549a894439fd3ffb84, type: 2}
   m_sharedMaterial: {fileID: 3646464594886495718, guid: 8d72557de83c1e549a894439fd3ffb84,
@@ -10439,15 +10439,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 426103640870778481}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.6956653, w: -0.7183661}
-  m_LocalPosition: {x: -1.17, y: -5.124, z: -10.64}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: -1.014, y: -5.059, z: -10.64}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 532530732806977069}
   - {fileID: 825160938831632999}
   m_Father: {fileID: 2507013071622206652}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 271.839}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &3210585822249993983
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10861,7 +10861,7 @@ PrefabInstance:
     - target: {fileID: 8709517798644342518, guid: 086cdb3ba86a926419cf366fb2a25e96,
         type: 3}
       propertyPath: OnTimeOut.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8709517798644342518, guid: 086cdb3ba86a926419cf366fb2a25e96,
         type: 3}
@@ -13434,7 +13434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: "\u0E40\u0E25\u0E48\u0E19"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d72557de83c1e549a894439fd3ffb84, type: 2}
   m_sharedMaterial: {fileID: 3646464594886495718, guid: 8d72557de83c1e549a894439fd3ffb84,
@@ -13633,7 +13633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &6495245123321411016
 MonoBehaviour:
   m_ObjectHideFlags: 0
